@@ -8,17 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --dark: #080E1A;
-    --navy: #0C1829;
-    --blue: #0E6CF5;
-    --blue-light: #3D8BFF;
-    --cyan: #00C2FF;
+    --dark: #0A0A0A;
+    --navy: #111111;
+    --blue: #F5A800;
+    --blue-light: #FFC233;
+    --cyan: #F5A800;
     --orange: #FF5A1F;
     --light: #F4F6FA;
     --white: #FFFFFF;
     --text-muted: rgba(255,255,255,0.55);
     --text-dim: rgba(255,255,255,0.35);
-    --border: rgba(255,255,255,0.08);
+    --border: rgba(255,255,255,0.1);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -137,14 +137,14 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(105deg, rgba(8,14,26,0.97) 45%, rgba(8,14,26,0.6) 100%);
+    background: linear-gradient(105deg, rgba(10,10,10,0.97) 45%, rgba(10,10,10,0.65) 100%);
   }
   .hero-grid-lines {
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(14,108,245,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(14,108,245,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(245,168,0,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,168,0,0.05) 1px, transparent 1px);
     background-size: 60px 60px;
     z-index: 1;
   }
@@ -155,7 +155,7 @@
     height: 60%;
     background: linear-gradient(to bottom, var(--blue), transparent);
     z-index: 2;
-    opacity: 0.6;
+    opacity: 0.7;
   }
   .hero-content {
     position: relative;
@@ -251,7 +251,7 @@
     animation: fadeUp 0.8s ease 1s forwards;
   }
   .hero-stat {
-    background: rgba(12,24,41,0.85);
+    background: rgba(0,0,0,0.85);
     backdrop-filter: blur(8px);
     border: 0.5px solid var(--border);
     padding: 18px 24px;
@@ -319,7 +319,7 @@
   .sobre-img-placeholder {
     width: 100%;
     aspect-ratio: 3/4;
-    background: linear-gradient(135deg, #0D1F3C 0%, #0C2545 50%, #091830 100%);
+    background: linear-gradient(135deg, #1A1500 0%, #111111 50%, #0A0A0A 100%);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -334,7 +334,7 @@
     position: absolute;
     top: -50%; left: -50%;
     width: 200%; height: 200%;
-    background: radial-gradient(circle at 60% 40%, rgba(14,108,245,0.12) 0%, transparent 60%);
+    background: radial-gradient(circle at 60% 40%, rgba(245,168,0,0.1) 0%, transparent 60%);
   }
   .sobre-img-placeholder-icon {
     font-size: 64px;
@@ -375,9 +375,9 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: rgba(14,108,245,0.1);
-    border: 0.5px solid rgba(14,108,245,0.3);
-    color: var(--blue-light);
+    background: rgba(245,168,0,0.1);
+    border: 0.5px solid rgba(245,168,0,0.3);
+    color: #FFC233;
     font-size: 12px;
     padding: 6px 14px;
     border-radius: 20px;
@@ -419,7 +419,7 @@
   /* ─── MODALIDADES ─── */
   #modalidades {
     padding: 120px 0;
-    background: var(--navy);
+    background: #111111;
     position: relative;
     overflow: hidden;
   }
@@ -429,7 +429,7 @@
     top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--blue), transparent);
-    opacity: 0.4;
+    opacity: 0.5;
   }
   .section-header {
     text-align: center;
@@ -549,7 +549,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
   }
-  .formato-badge.blue { background: rgba(14,108,245,0.15); color: var(--blue-light); }
+  .formato-badge.blue { background: rgba(245,168,0,0.12); color: #FFC233; }
   .formato-badge.orange { background: rgba(255,90,31,0.15); color: #FF7A45; }
   .formato-card h3 {
     font-family: 'Bebas Neue', sans-serif;
@@ -586,14 +586,14 @@
     margin-top: 1px;
     font-size: 10px;
   }
-  .check.blue { background: rgba(14,108,245,0.2); color: var(--blue-light); }
+  .check.blue { background: rgba(245,168,0,0.15); color: #FFC233; }
   .check.orange { background: rgba(255,90,31,0.2); color: #FF7A45; }
   .btn-outline-blue {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     border: 1px solid var(--blue);
-    color: var(--blue-light);
+    color: #FFC233;
     padding: 12px 24px;
     border-radius: 32px;
     font-size: 14px;
@@ -603,7 +603,7 @@
     cursor: pointer;
     background: transparent;
   }
-  .btn-outline-blue:hover { background: rgba(14,108,245,0.1); }
+  .btn-outline-blue:hover { background: rgba(245,168,0,0.1); }
   .btn-outline-orange {
     display: inline-flex;
     align-items: center;
@@ -640,7 +640,7 @@
     left: calc(16.67% + 32px);
     right: calc(16.67% + 32px);
     height: 1px;
-    background: linear-gradient(90deg, var(--blue), rgba(14,108,245,0.3), var(--blue));
+    background: linear-gradient(90deg, var(--blue), rgba(245,168,0,0.3), var(--blue));
     opacity: 0.4;
   }
   .step-item {
@@ -650,8 +650,8 @@
   .step-num-wrap {
     width: 64px; height: 64px;
     border-radius: 50%;
-    border: 1.5px solid rgba(14,108,245,0.4);
-    background: rgba(14,108,245,0.08);
+    border: 1.5px solid rgba(245,168,0,0.5);
+    background: rgba(245,168,0,0.08);
     display: flex; align-items: center; justify-content: center;
     margin: 0 auto 24px;
     position: relative;
@@ -697,7 +697,7 @@
   .plano-card:hover { transform: translateY(-4px); }
   .plano-card.destaque {
     border-color: var(--blue);
-    background: linear-gradient(160deg, #0D2045 0%, #091830 100%);
+    background: linear-gradient(160deg, #1A1500 0%, #0D0D0D 100%);
   }
   .plano-popular {
     position: absolute;
@@ -705,11 +705,11 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--blue);
-    color: var(--white);
+    color: #000;
     font-size: 11px;
     padding: 5px 16px;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.5px;
     white-space: nowrap;
   }
@@ -726,12 +726,12 @@
     line-height: 1.5;
   }
   .plano-price-area {
-    background: rgba(14,108,245,0.08);
+    background: rgba(245,168,0,0.08);
     border-radius: 10px;
     padding: 18px;
     text-align: center;
     margin-bottom: 28px;
-    border: 0.5px solid rgba(14,108,245,0.15);
+    border: 0.5px solid rgba(245,168,0,0.2);
   }
   .plano-price-text {
     font-size: 13px;
@@ -840,11 +840,11 @@
   .depoimento-avatar {
     width: 44px; height: 44px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    background: linear-gradient(135deg, var(--blue), #FFC233);
     display: flex; align-items: center; justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 18px;
-    color: var(--white);
+    color: #000;
     flex-shrink: 0;
   }
   .depoimento-name {
@@ -885,7 +885,7 @@
   .contato-bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(14,108,245,0.12) 0%, transparent 70%);
+    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(245,168,0,0.1) 0%, transparent 70%);
   }
   .contato-inner {
     text-align: center;
@@ -1065,7 +1065,7 @@
 <nav id="navbar">
   <div class="container">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">DIEGO <span>DUARTE</span></a>
+      <a href="#hero" class="nav-logo">DUARTE <span>TRIATHLON</span></a>
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#modalidades">Modalidades</a></li>
@@ -1449,8 +1449,8 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-logo">DIEGO <span>DUARTE</span></div>
-      <div class="footer-copy">© 2025 Diego Duarte Assessoria de Triathlon</div>
+      <div class="footer-logo">DUARTE <span>TRIATHLON</span></div>
+      <div class="footer-copy">© 2025 Duarte Triathlon Team</div>
       <div class="footer-social">
         <a href="#">Instagram</a>
         <a href="https://wa.me/5500000000000">WhatsApp</a>
